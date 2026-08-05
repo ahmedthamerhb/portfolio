@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- عنوان وتوصيف الموقع لـ SEO -->
+    <title>Ahmed Thamer | Portfolio</title>
+    <meta name="description" content="البورتفوليو الشخصي للمطور والمصمم أحمد ثامر - متخصص في تطوير الـ Backend وتصميم الجرافيك.">
+    <meta name="author" content="Ahmed Thamer">
+
+    <!-- كروت مشاركة الرابط على مواقع التواصل (Open Graph) -->
+    <meta property="og:title" content="Ahmed Thamer | Portfolio">
+    <meta property="og:description" content="Backend Developer & Graphic Designer Portfolio">
+    <meta property="og:image" content="ahmed-thamer.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero-section">
+        <div class="hero-content">
+            <img src="ahmed-thamer.jpg" alt="Ahmed Thamer" class="profile-img">
+            <div class="hero-text">
+                <h1>أحمد ثامر <span>(Ahmed Thamer)</span></h1>
+                <p class="job-title">Backend Developer & Graphic Designer</p>
+
+                <div class="skills-tags">
+                    <span class="tag">Back-end</span>
+                    <span class="tag">Data Structures</span>
+                    <span class="tag">Graphic Designer</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">++C</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">Teamwork</span>
+                </div>
+
+                <div class="cv-download-wrapper">
+                    <a href="Ahmed Thamer_cv.pdf" download class="cv-btn">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        <span>Download CV</span>
+                    </a>
+
+                </div>
+            </div>
+    </header>
+
+    <!-- نبذة مختصرة -->
+    <section class="about-section">
+        <div class="about-card">
+            <h2><i class="fa-solid fa-user-astronaut"></i>ABOUT ME</h2>
+            <p>
+                مطور <span>Backend</span> و <span>Graphic Designer</span> أدمج بين دقة الكود والمنطق البرمجي، وبين الحس
+                الفني والجمال البصري. أهدف لبناء أنظمة قوية وعالية الأداء، مع تقديم هويات وبوسترات بصرية تترك إنتقاداً
+                وانطباعاً احترافياً يُلهم المستخدم.
+            </p>
+        </div>
+    </section>
+
+    <main class="projects-section">
+        <div class="filter-tabs">
+            <button class="tab-btn active" onclick="scrollToSection('design-section')"><i
+                    class="fa-solid fa-palette"></i> Graphic
+                Design</button>
+            <button class="tab-btn" onclick="scrollToSection('coding-section')"><i class="fa-solid fa-code"></i>
+                Coding</button>
+
+            <button class="tab-btn" onclick="scrollToSection('contact-section')"><i class="fa-solid fa-paper-plane"></i>
+                Contact Me</button>
+
+        </div>
+
+        <div id="design-section" class="category-block"></div>
+        <div class="section-divider">
+            <h3><i class="fa-solid fa-palette"></i> GRAPHIC DESIGN</h3>
+        </div>
+        <div id="design-projects" class="projects-grid">
+
+            <!-- Add Project To Instagram -->
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1" class="card-img">
+                <div class="card-content">
+                    <h3>تصميم بوستر ثقافي وثائقي - ملوية سامراء</h3>
+                    <p class="card-desc">عمل جرافيكي يعرض ملوية سامراء بأسلوب Poster Design حديث. ركزت فيه على إبراز
+                        التفاصيل المعمارية للعصر العباسي مع التلاعب بالتايبوجرافي (Typography) وتدرجات الألوان.</p>
+                    <a href="https://www.instagram.com/p/DaTfIrlo-wR/?igsh=b3phZnNqN2s0NmF0" target="_blank"
+                        class="social-btn instagram-btn">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2" class="card-img">
+                <div class="card-content">
+                    <h3>تصميم بوستر إعلاني - مهرجان رحلة عبر التراث</h3>
+                    <p class="card-desc">تصميم بوستر إعلاني لمهرجان "رحلة عبر التراث" الذي يسلط الضوء على التراث
+                        العراقي. استخدمت فيه عناصر تصميمية مستوحاة من الفن الإسلامي التقليدي مع لمسة عصرية.</p>
+                    <a href="https://www.instagram.com/p/DbA7xOsI5og/?igsh=YzhlM3JxMGtoNGJw" target="_blank"
+                        class="social-btn instagram-btn">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3" class="card-img">
+                <div class="card-content">
+                    <h3>تصميم بوستر بيئي - حملة التوعية بالحفاظ على البيئة</h3>
+                    <p class="card-desc">بوستر لمبادرة بيئية تهدف إلى رفع مستوى الوعي حول أهمية الحفاظ على البيئة.
+                        استخدمت فيه صور توضيحية لعرض التأثيرات البيئية السلبية والحلول المستدامة.</p>
+                    <a href="https://www.instagram.com/p/DbIsgcWIkE8/?igsh=MWRoYTZmaTA2bzRsag==" target="_blank"
+                        class="social-btn instagram-btn">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="project4.jpg" alt="Project 4" class="card-img">
+                <div class="card-content">
+                    <h3>تصميم بوستر ثقافي - جسر التنومة (البصرة)</h3>
+                    <p class="card-desc">بوستر يسلط الضوء على جسر التنومة في البصرة، مع التركيز على الجمال المعماري
+                        والتاريخي للجسر. استخدمت فيه تقنيات التصميم الحديثة لإبراز التفاصيل الدقيقة.</p>
+                    <a href="https://www.instagram.com/p/DbWMCeBIG9b/?igsh=MXR4ZWowZWd1Z2dydg==" target="_blank"
+                        class="social-btn instagram-btn">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div id="coding-section" class="category-block">
+            <div class="section-divider">
+                <h3><i class="fa-solid fa-code"></i> CODING</h3>
+            </div>
+            <div id="coding-projects" class="projects-grid">
+            </div>
+            <div id="programming-projects" class="projects-grid">
+
+                <!-- Add Project To LinkedIn -->
+                <div class="project-card">
+                    <img src="QR-menu.jpg" alt="QR Menu" class="card-img">
+                    <div class="card-content">
+                        <h3>نظام المنيو الرقمي (Digital QR Menu)</h3>
+                        <p class="card-desc">مشروع برمجي يهدف إلى إنشاء نظام منيو رقمي باستخدام QR Code. يمكن للمستخدمين
+                            مسح رمز QR للوصول إلى قائمة الطعام الرقمية، مما يسهل عملية الطلب ويقلل من الحاجة إلى قوائم
+                            ورقية.</p>
+                        <a href="https://www.linkedin.com/posts/ahmed-thamer-047982381_webdevelopment-uiux-restauranttech-share-7486055361360343042-RQuZ/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF5LUbcBIuhZ-UbS3NjnPSpaqi9vsFHcKDU"
+                            target="_blank" class="project-btn linkedin-btn">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+    <!-- قسم التواصل معي -->
+    <footer id="contact-section" class="contact-footer">
+        <div class="contact-container">
+            <div class="section-divider">
+                <h3><i class="fa-solid fa-paper-plane"></i>CONTACT ME</h3>
+            </div>
+
+            <div class="social-icons-only">
+                <!-- whatsApp -->
+                <a href="https://wa.me/9647750507632" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <!-- instagram -->
+                <a href="https://www.instagram.com/ahm_th1?igsh=cnVtdjM2MXA0dHY=" target="_blank"
+                    class="social-icon instagram" title="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a href="https://www.linkedin.com/in/ahmed-thamer-047982381" target="_blank"
+                    class="social-icon linkedin" title="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/ahmedthamerhb" target="_blank" class="social-icon github" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة للأعلى -->
+    <button id="backToTop" class="back-to-top" title="العودة للأعلى" onclick="scrollToTop()">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+</body>
+
+</html>

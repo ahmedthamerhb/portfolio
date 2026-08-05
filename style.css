@@ -1,0 +1,557 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+    padding: 50px 20px;
+    border-bottom: 2px solid #8b5cf633;
+}
+
+.hero-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+    margin-inline: auto;
+    padding: 4px;
+    border: 4px solid transparent;
+    background:
+        linear-gradient(#0f172a, #0f172a) padding-box,
+        linear-gradient(135deg, #8b5cf6 0%, #38bdf8 50%, #f472b6 100%) border-box;
+    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1), 0 0 25px rgba(56, 189, 248, 0.35), 0 0 45px rgba(139, 92, 246, 0.25);
+    animation: neonGlow 2.8s ease-in-out infinite;
+}
+
+@keyframes neonGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1), 0 0 25px rgba(56, 189, 248, 0.35), 0 0 45px rgba(139, 92, 246, 0.25);
+    }
+
+    50% {
+        box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.12), 0 0 30px rgba(244, 114, 182, 0.4), 0 0 55px rgba(139, 92, 246, 0.3);
+    }
+
+}
+
+.hero-text {
+    text-align: center;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.hero-text h1 span {
+    color: #94a3b8;
+    font-size: 1.2rem;
+}
+
+.job-title {
+    color: #38bdf8;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tag {
+    background: rgba(124, 58, 237, 0.15);
+    color: #c084fc;
+    border: 1px solid rgba(168, 85, 247, 0.4);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.projects-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.projects-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: #f8fafc;
+    direction: ltr;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.project-card {
+    background: #1e293b;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.25);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    background: transparent;
+    border-bottom: 1px solid #334155;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-content {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card-content h3 {
+    font-size: 0.95rem;
+    color: #f8fafc;
+    margin-bottom: 6px;
+}
+
+.card-desc {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.social-btn {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.instagram-btn {
+    background: linear-gradient(45deg, #833ab4, #fd1dfd, #fcb045);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.instagram-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    background: linear-gradient(45deg, #fd1dfd, #fcb045, #833ab4);
+}
+
+
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px auto 40px auto;
+    width: 100%;
+}
+
+.tab-btn {
+    background: #1e293b;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    gap: 8px;
+    outline: none;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: #ffffff;
+    border-color: #a855f7;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+    transform: translateY(-2px);
+}
+
+.category-block {
+    margin-top: 60px;
+    scroll-margin-top: 40px;
+}
+
+.section-divider {
+    border-bottom: 2px solid #334155;
+    margin: 40px 0 25px 0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.section-divider h3 {
+    color: #f8fafc;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #a855f7, #6366f1);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.project-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.linkedin-btn {
+    background: #0a66c2;
+    color: #ffffff;
+    border: 1px solid #1178e2;
+    box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3);
+}
+
+.linkedin-btn:hover {
+    background: #084e96;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(10, 102, 194, 0.5);
+}
+
+.linkedin-btn i {
+    font-size: 1.2rem;
+}
+
+/* تنسيق أيقونات التواصل فقط (حجم كبير ولطيف) */
+
+.contact-footer {
+    background: transparent;
+    padding: 20px 0 60px 0;
+    margin-top: 40px;
+    scroll-margin-top: 30px;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-container .section-divider {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contact-title {
+    color: #f8fafc;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.social-icons-only {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    font-size: 2.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+.social-icon.whatsapp {
+    background: #25d366;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.social-icon.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
+}
+
+.social-icon.linkedin {
+    background: #0a66c2;
+    box-shadow: 0 4px 15px rgba(10, 102, 194, 0.4);
+}
+
+.social-icon.github {
+    background: #1e293b;
+    border: 1px solid #475569;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* نسيق قسم عنّي (About Me) */
+.about-section {
+    max-width: 1000px;
+    margin: 35px auto 15px auto;
+    padding: 0 20px;
+}
+
+.about-card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.about-card:hover {
+    border-color: rgba(56, 189, 248, 0.4);
+    transform: translateY(-2px);
+}
+
+.about-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #8b5cf6 0%, #38bdf8 50%, #f472b6 100%);
+}
+
+.about-card h2 {
+    font-size: 1.35rem;
+    color: #f8fafc;
+    margin-bottom: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #38bdf8, #c084fc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    padding: 0 4px;
+}
+
+.about-card h2 i {
+    color: #38bdf8;
+    font-size: 1.2rem;
+}
+
+.about-card p {
+    color: #cbd5e1;
+    font-size: 0.98rem;
+    line-height: 1.9;
+    max-width: 850px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.about-card p span {
+    background: linear-gradient(135deg, #c084fc, #38bdf8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    padding: 0 4px;
+}
+
+/* تنسيق زر تحميل السيرة الذاتية (CV) */
+
+.cv-download-wrapper {
+    margin-top: 25px;
+}
+
+.cv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #8b5cf6, #38bdf8);
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.25);
+    transition: all 0.3s ease;
+}
+
+.cv-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 6px 25px rgba(139, 92, 246, 0.45);
+    background: linear-gradient(135deg, #a855f7, #0284c7);
+}
+
+.cv-btn i {
+    font-size: 1.05rem;
+}
+
+/* ==========================================
+   زر العودة للأعلى (Back to Top)
+   ========================================== */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8b5cf6, #38bdf8);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999; /* ضمان ظهور الزر فوق كل العناصر */
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
+}
+
+/* إصلاح التجاوب مع التلفون والـ Overflow */
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text h1 span {
+        font-size: 1rem;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .skills-tags {
+        gap: 8px;
+    }
+
+    .tag {
+        padding: 5px 10px;
+        font-size: 0.78rem;
+    }
+
+    .about-card {
+        padding: 20px 15px;
+    }
+
+    .about-card p {
+        font-size: 0.88rem;
+        line-height: 1.7;
+    }
+
+    .filter-tabs {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tab-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+
