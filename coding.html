@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Projects | Ahmed Thamer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fade-in">
+
+    <header class="main-navbar">
+        <nav class="nav-links">
+            <a href="index.html" class="nav-btn"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="design.html" class="nav-btn"><i class="fa-solid fa-palette"></i> Graphic Design</a>
+            <a href="coding.html" class="nav-btn active"><i class="fa-solid fa-code"></i> Coding</a>
+            <a href="index.html#contact-section" class="nav-btn contact-btn"><i class="fa-solid fa-paper-plane"></i>
+                Contact Me</a>
+        </nav>
+        <div class="brand-logo">
+            <span>PORTFOLIO</span>
+        </div>
+    </header>
+
+    <div class="case-study-block">
+        <div class="case-study-header">
+            <h4><i class="fa-solid fa-utensils"></i> تطبيق المنيو الإلكتروني التفاعلي</h4>
+            <span class="header-badge">Restaurant Menu App</span>
+        </div>
+
+        <p class="section-desc">منيو مطعم إلكتروني متكامل ومتجاوب مع جميع الشاشات، يتناول الفلترة الذكية وإرسال الطلبات
+            مباشرة عبر الواتساب مع لوحة تحكم لإدارة الوجبات.</p>
+
+        <!-- بطاقة المشروع الرئيسية -->
+        <div class="project-card-container">
+
+            <!-- الجانب الأيسر: عرض صور المنيو -->
+            <div class="project-preview-side">
+                <div class="phone-mockup-frame">
+                    <img src="Phone Mockup.png" alt="واجهة المنيو الرئيسية" class="mockup-img">
+                </div>
+                <div class="phone-mockup-frame modal-preview">
+                    <img src="Phone Mockup2.png" alt="سلة الطلبات الشفافة" class="mockup-img">
+                </div>
+            </div>
+
+            <!-- الجانب الأيمن: التفاصيل الفنية والمميزات -->
+            <div class="project-info-side">
+
+                <!-- أدوات التقنية Used Tech -->
+                <div class="tech-stack-wrapper">
+                    <span class="tech-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                    <span class="tech-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                    <span class="tech-tag"><i class="fa-brands fa-square-js"></i> JavaScript (ES6+)</span>
+                    <span class="tech-tag"><i class="fa-brands fa-whatsapp"></i> WhatsApp API Integration</span>
+                </div>
+
+                <!-- مميزات المشروع -->
+                <div class="project-features-list">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-filter"></i>
+                        <div>
+                            <strong>فلترة قائمة الأطعمة:</strong>
+                            <p>تنقل سريع بين الوجبات الرئيسية، المشروبات، والمقبلات دون الحاجة لإعادة تحميل الصفحة.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div>
+                            <strong>سلة طلبات تفاعلية:</strong>
+                            <p>إضافة الوجبات للسلة وحساب المجموع الكلي تلقائياً مع خيار كتابة ملاحظات الطلب.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <div>
+                            <strong>إرسال مباشر للواتساب:</strong>
+                            <p>تحويل تفاصيل الطلب ومعلومات الزبون فوراً إلى رسالة منسقة عبر WhatsApp.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <i class="fa-solid fa-sliders"></i>
+                        <div>
+                            <strong>لوحة تحكم (Control Panel):</strong>
+                            <p>خاصية تمكّن صاحب المطعم من إضافة، تعديل، أو حذف الوجبات بسهولة.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- أزرار المعاينة والكود -->
+                <div class="project-action-btns">
+                    <a href="https://ahmedthamerhb.github.io/restaurant-menu/" target="_blank" class="btn-primary">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> معاينة المنيو المباشرة
+                    </a>
+                    <a href="https://github.com/ahmedthamerhb/restaurant-menu" target="_blank" class="btn-secondary">
+                        <i class="fa-brands fa-github"></i> الكود المصدري
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <main class="projects-section">
+        <div class="section-divider">
+            <h3><i class="fa-solid fa-code"></i> CODING PROJECTS</h3>
+        </div>
+
+        <div id="coding-projects" class="projects-grid">
+            <div class="project-card">
+                <img src="menu-QR.jpg" alt="QR Menu" class="card-img">
+                <div class="card-content">
+                    <h3>نظام المنيو الرقمي (Digital QR Menu)</h3>
+                    <p class="card-desc">مشروع برمجي يهدف إلى إنشاء نظام منيو رقمي باستخدام QR Code. يمكن للمستخدمين مسح
+                        رمز QR للوصول إلى قائمة الطعام الرقمية، مما يسهل عملية الطلب ويقلل من الحاجة إلى قوائم ورقية.
+                    </p>
+                    <a href="https://www.linkedin.com/posts/ahmed-thamer-047982381_frontenddevelopment-javascript-webdevelopment-share-7495899705168814080-onOK/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF5LUbcBIuhZ-UbS3NjnPSpaqi9vsFHcKDU"
+                        target="_blank" class="project-btn linkedin-btn">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- زر العودة للأعلى -->
+    <button id="backToTop" class="back-to-top" title="العودة للأعلى" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
